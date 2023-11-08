@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+}
+body{
+    font-family:Verdana;
+    color:rgb(82, 82, 82);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+/* Mesmo que no próximo bloco
+li{
+    display: inline;    
+    float: left;
+}*/
+
+/*Decora a fonte dos tópicos da navBar*/
+li a {
+    display: block;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    display: inline;    
+    float: left;
+  }
+
+/*Muda a cor dos tópicos na navBar quando passa o mouse por cima*/
+li a:hover {
+    background-color: #e1f7fd;
+}
+
+.superior{
+    background-color:#e5e5e5;
+    padding:15px;
+    text-align:center;
+}
+
+
+img{
+    width: 250px;
+    height: 300px;
+}
+
+
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+   
+}
+
+.modal .content{
+	background-color:#D3D3D3;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+
+
+
+
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: rgb(80, 80, 80);
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    overflow: auto; /*add barra de rolagem se necessário*/
+}
+
+#rodape{
+    background-color:#e5e5e5;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}
+
+@media only screen and (max-width: 620px) {
+    /*Tamanho para mobile*/
+    .menu, .main, .right {
+        width: 100%;
+    }
+}
