@@ -11,64 +11,71 @@
 
 </head>
 <body>
-
 <!-- BARRA DE NAVEGAÇÃO -->
-<div class="superior" >
+<header class="superior" >
+  <img src="logoIFCEbranca.png" style="width: 200px;">
+
     <div class="barraNaveg">
         <ul>
-            <li><a href="telaprincipal.html">Home</a></li>
-            <li><a href="">News</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="https://ifce.edu.br/iguatu">IFCE</a></li>
             <li><a href="">Contact</a></li>
-
-            <li class="modalBtn"><a>Sobre a equipe </a>
+          
+            <li class="modalBtn"><a>About the team </a>
                 <div class="modal">
                     <div class="content">
-                    <!--conteudo-->
-                    <p>Vamos falar um pouco sobre a gente aqui</p>
+                 
+                    <p>   conteudo--Vamos falar um pouco sobre a gente aqui</p>
                     </div>
                 </div>
            </li>
         </ul>
     </div>
-</div>
-<!--------->
+</header>
+<!--
+<header class="superior">
+  <img class="logoIFCE" src="logoIFCEbranca.png">
+  
+  <nav class="barraNaveg"> 
+    <a class="navegacao-item" href="home.html"> Home </a>
+    <a class="navegacao-item" href="https://ifce.edu.br/iguatu"> IFCE </a>
+    <a class="navegacao-item" > News </a>
+    <a class="navegacao-item" > About the team </a> <!--talvez seja uma modal-->
+  </nav>
+  
+</header>-->
 
 
-<br>
 <!-- SLIDESHOW -->
 <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 5</div>
-      <img src="alan.jpg" style="width:100%">
-      <div class="text"> Pessoa 1</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 5</div>
-      <img src="ada.png" style="width:100%">
-      <div class="text"> Pessoa 2 </div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 5</div>
-      <img src="comp.jpg" style="width:100%">
-      <div class="text">Pessoa 3</div>
-    </div>
+        <div class="mySlides fade">
+          <img src="alan.jpg" alt="Ada Lovelace" style="width:100%">
+          <div class="text"> Pessoa 1</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="ada.png" alt="Ada Lovelace" style="width:100%">
+          <div class="text"> Pessoa 2 </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="alan.jpg" alt="Ada Lovelace" style="width:100%">
+          <div class="text">Pessoa 3</div>
+        </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="alan.jpg" style="width:100%">
-        <div class="text">Pessoa 4</div>
-    </div>
-    
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="compp.jpg" style="width:100%">
-        <div class="text">Pessoa 5</div>
-      </div>
-    </div>
-    <br>
-    
+        <div class="mySlides fade">
+            <img src="alan.jpg" alt="Ada Lovelace" style="width:100%">
+            <div class="text">Pessoa 4</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="alan.jpg" alt="Ada Lovelace" style="width:100%">
+            <div class="text">Pessoa 5</div>
+        </div>
+  </div>
+
+  
+  
     <div style="text-align:center">
       <span class="dot"></span> 
       <span class="dot"></span> 
@@ -78,72 +85,77 @@
     </div>
 <!------------>
 
+<br><br>
 
-<div style="overflow:auto">
-  <div class="row">
-    <div class="leftcolumn">
-       
-          <div class="main">  <!--TEXTO CENTRAL-->
-              <h2>Grandes nomes da computação</h2>
-              <p>Aqui a gente vai fazer meio que um texto introdutório.</p>
-              <p>Testando o texto</p>
-              <p>Testando o texto</p>
-              <p>Testando texto</p>
-          </div> <br>
+  <section class="conteudo-principal" style="overflow:auto">
+    <div class="coluna-esquerda">
+      
+      <div class="texto-central">  <!--TEXTO CENTRAL-->
+            <h2 style="color:#D9B48F;">Grandes nomes da computação</h2>
+            <p>Internet, videogames, mídia social, laptops e smartphones – nossas vidas diárias mudaram drasticamente com o advento e o desenvolvimento de produtos baseados em tecnologia. Mas não teríamos essas coisas sem as pessoas que escreveram o código, construíram as máquinas e guiaram a evolução das tecnologias de computador que tão facilmente consideramos naturais hoje.</p>
+            <br>
+            <p>Mas quem são exatamente essas pessoas? A história da computação está repleta de homens e mulheres de diferentes áreas que contribuíram para construir a era da informação como a conhecemos. Hoje em dia, os cientistas da computação são considerados novos astros do rock.</p></h3>
+      
+      </div> 
+      <br>
 
-      <div class="coluna">
-                  <div class="gallery">
+      <div class="galeria-imagens">
+                  <div class="galeria-card">
+                      <a target="_blank" href="ada.html">
+                        <img src="ada.png" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="galeria-descricao">Ada Lovelace</div>
+                  </div>
+
+                  <div class="galeria-card">
+                      <a target="_blank" href="ADA.html">
+                        <img src="ada.png" alt="Ada Lovelace" width="600" height="400">
+                      </a>
+                      <div class="galeria-descricao">Ada Lovelace</div>
+                  </div>
+
+                  <div class="galeria-card">
+                      <a target="_blank" href="ADA.html">
+                        <img src="ada.png" alt="Alan Turing" width="600" height="400">
+                      </a>
+                      <div class="galeria-descricao">Alan Turing</div>
+                  </div>
+
+                  <div class="galeria-card">
                       <a target="_blank" href="ADA.html">
                         <img src="ada.png" alt="Northern Lights" width="600" height="400">
                       </a>
-                      <div class="desc">Pessoa 1</div>
+                      <div class="galeria-descricao">Pessoa 3</div>
                   </div>
 
-                  <div class="gallery">
+                  <div class="galeria-card">
                       <a target="_blank" href="ADA.html">
                         <img src="ada.png" alt="Northern Lights" width="600" height="400">
                       </a>
-                      <div class="desc">Pessoa 1</div>
+                      <div class="galeria-descricao">Pessoa 4</div>
                   </div>
 
-                  <div class="gallery">
+                  <div class="galeria-card">
                       <a target="_blank" href="ADA.html">
                         <img src="ada.png" alt="Northern Lights" width="600" height="400">
                       </a>
-                      <div class="desc">Pessoa 2</div>
+                      <div class="galeria-descricao">Pessoa 5</div>
                   </div>
-
-                  <div class="gallery">
-                      <a target="_blank" href="ADA.html">
-                        <img src="ada.png" alt="Northern Lights" width="600" height="400">
-                      </a>
-                      <div class="desc">Pessoa 3</div>
-                  </div>
-
-                  <div class="gallery">
-                      <a target="_blank" href="ADA.html">
-                        <img src="ada.png" alt="Northern Lights" width="600" height="400">
-                      </a>
-                      <div class="desc">Pessoa 4</div>
-                  </div>
-
-                  <div class="gallery">
-                      <a target="_blank" href="ADA.html">
-                        <img src="ada.png" alt="Northern Lights" width="600" height="400">
-                      </a>
-                      <div class="desc">Pessoa 5</div>
-                  </div>
-                </div>
+        </div>
               
     </div>
     
-    <div class="rightcolumn">
-      <div class="right">
-          <h2>Curiosidades</h2>
-          <p> Podemos colocar curiosidades da área</p>
-      </div>
-    </div>
-  </div>
+        <div class="coluna-direita">
+              <div class="right">
+                  <h2>Curiosidades</h2>
+                    <p> Podemos colocar curiosidades da área</p>
+              </div>
+              <div class="right">
+                <h2>Curiosidades</h2>
+                  <p> Podemos colocar curiosidades da área</p>
+            </div>
+          </div>
+  </section>
   
   <div class="menu">
       <!--mudar isso do lado para depois do texto central-->
@@ -154,12 +166,12 @@
 
        
 </div>
-  <div>
   
-  </div>
-
 <!--RODAPÉ-->
-<div id="rodape">© copyright CC-S2</div>
+<footer>
+  <div id="rodape">© copyright CC-S2</div>
+</footer>
+
 <!------>
 
 </body>
@@ -209,7 +221,7 @@
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
     </script>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Web English </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="logoIFCE" src="logoIFCEbranca.png">
+    
+    <nav class="navegacao">
+      <a class="navegacao-item" href="home.html"> Home </a>
+      <a class="navegacao-item" href="https://ifce.edu.br/iguatu"> IFCE </a>
+      <a class="navegacao-item" > News </a>
+      <a class="navegacao-item" > About the team </a> <!--talvez seja uma modal-->
+    </nav>
+    
+  </header>
+
+  <main>
+    <section class="secao-superior">
+      <div class="texto-principal">
+        <h1 class="titulo-principal">Let's Learn English with the History of Computing!</h1>
+        <h3 class="texto-introducao"><p>Internet, videogames, mídia social, laptops e smartphones – nossas vidas diárias mudaram drasticamente com o advento e o desenvolvimento de produtos baseados em tecnologia. Mas não teríamos essas coisas sem as pessoas que escreveram o código, construíram as máquinas e guiaram a evolução das tecnologias de computador que tão facilmente consideramos naturais hoje.</p>
+        <br>
+          <p>Mas quem são exatamente essas pessoas? A história da computação está repleta de homens e mulheres de diferentes áreas que contribuíram para construir a era da informação como a conhecemos. Hoje em dia, os cientistas da computação são considerados novos astros do rock.</p></h3>
+      </div>
+
+      <div class="slideshow-container">
+            <div class="slide-foto fade">
+              <img src="ada_slide.jpeg" alt="Ada Lovelace" style="width:600px">
+            </div>
+    
+            <div class="slide-foto fade">
+              <img src="ada_slide.jpeg" alt="Alan Turing" style="width:600px">
+            </div>
+    
+            <div class="slide-foto fade">
+              <img src="ada_slide.jpeg" style="width:600px">
+            </div>
+    
+            <div class="slide-foto fade">
+              <img src="ada_slide.jpeg" style="width:600px">
+            </div>
+    
+            <div class="slide-foto fade">
+              <img src="ada_slide.jpeg" style="width:600px">
+            </div>
+         
+    
+          <div style="text-align:center">
+            <span class="teste dot"></span> 
+            <span class="teste dot"></span> 
+            <span class="teste dot"></span>
+            <span class="teste dot"></span>
+            <span class="teste dot"></span>
+          </div> 
+      </div>
+    </section>
+
+    
+    <section class="secao-inferior">
+          <div class="secao-inferior-esquerda">
+              <div class="galeria">
+                  <a target="_blank" href="ADA.html">
+                    <img class="imagem-galeria" src="ada_slide.jpeg" alt="Ada Lovelace" >
+                  </a>
+                  <div class="descricao-galeria">Ada Lovelace</div>
+              </div>
+
+              <div class="galeria">
+                  <a target="_blank" href="ADA.html">
+                    <img class="imagem-galeria" src="ada_slide.jpeg" alt="Ada Lovelace" >
+                  </a>
+                  <div class="descricao-galeria">Ada Lovelace</div>
+              </div>
+
+              <div class="galeria">
+                  <a target="_blank" href="ADA.html">
+                    <img class="imagem-galeria" src="ada_slide.jpeg" alt="Ada Lovelace" >
+                  </a>
+                  <div class="descricao-galeria">Ada Lovelace</div>
+              </div>
+
+              <div class="galeria">
+                  <a target="_blank" href="ADA.html">
+                    <img class="imagem-galeria" src="ada_slide.jpeg" alt="Ada Lovelace" >
+                  </a>
+                  <div class="descricao-galeria">Ada Lovelace</div>
+              </div>
+
+              <div class="galeria">
+                  <a target="_blank" href="ADA.html">
+                    <img class="imagem-galeria" src="ada_slide.jpeg" alt="Ada Lovelace" >
+                  </a>
+                  <div class="descricao-galeria">Ada Lovelace</div>
+              </div>
+          </div>
+          
+          <div class="secao-inferior-direita">
+            
+          </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+
+  
+  <script src="script.js">
+
+    
+  </script>
+  <script type="text/javascript">
+
+
+    // slidesShow
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide-foto");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
