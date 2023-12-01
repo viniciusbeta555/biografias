@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+
+<title>Alan Turing</title>
+
+</head>
+<body>
+<!-- BARRA DE NAVEGAÇÃO -->
+<header class="superior" >
+    <div class="barraNaveg">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="https://ifce.edu.br/iguatu">IFCE</a></li>
+            <li><a href="">Contact</a></li>
+          
+            <li class="modalBtn"><a>About the team </a>
+                <div class="modal">
+                    <div class="content">
+                 
+                    <p>   conteudo--Vamos falar um pouco sobre a gente aqui</p>
+                    </div>
+                </div>
+           </li>
+        </ul>
+    </div>
+</header>
+  
+<br><br>
+
+   <main class="principal">
+
+      <section class="imagem-descricao">
+
+          <div><img class="imagem" src="imagens/alan.JPG" alt="Alan Turing"></div>
+
+          <div class="informacoes">
+            <p>NAME: Alan Turing </p>
+            <p>BORN: 23th July 1912 </p>
+            <p>DIED: 07th June 1954 </p>
+            <p>CONTRIBUTION: He developed the basis of modern computing.</p>
+          </div>
+
+      </section>
+
+      <section class="biografia">
+
+            <div>bio</div>
+
+      </section>
+
+   </main>    
+ 
+       
+
+       
+</div>
+  
+<!--RODAPÉ-->
+<footer>
+  <div id="rodape">© copyright CC-S2</div>
+</footer>
+
+<!------>
+
+</body>
+
+
+<script type="text/javascript">
+
+//janela modal
+    const switchModal= () =>{
+        const modal= document.querySelector('.modal')
+        const actualStyle = modal.style.display
+        
+        if(actualStyle == 'block'){
+            modal.style.display = 'none'
+        }else{
+            modal.style.display= 'block'
+        }
+    }
+    
+    const btn = document.querySelector('.modalBtn')
+    btn.addEventListener('click', switchModal)
+    
+    window.onclick = function(event){
+        const modal= document.querySelector('.modal')
+        if(event.target == modal){
+            switchModal()
+        }
+    }
+
+
+
+// slidesShow
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+    </script>
+</html>

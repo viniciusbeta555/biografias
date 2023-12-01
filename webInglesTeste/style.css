@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: #1E1E1E;
+    font-family: Saira Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+/*-------------BARRA DE NAVEGAÇÃO---------------*/
+/*Decora a fonte dos tópicos da navBar*/
+li a {
+    display: block;
+    color: #D9B48F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    display: inline;    
+    float: left;
+  }
+
+/*Muda a cor dos tópicos na navBar quando passa o mouse por cima*/
+li a:hover {
+    cursor: pointer;
+    border: 3px solid #D9B48F;
+    border-radius: 10px;
+}
+
+/*envolve a barra de navegação*/
+.superior{
+   
+  background-color: #1E1E1E;
+  padding:15px;
+  border-bottom: 2px #D9B48F solid;
+
+    text-align:center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;  
+}
+
+
+/*Janela modal*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #c1e8ff66;
+
+}
+
+.modal .content{
+  background-color:#7da0ca;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/*fim da janela modal*/
+/*-------------FIM BARRA DE NAVEGAÇÃO---------------*/
+
+
+/*linha com as duas colunas*/
+.conteudo-principal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/*coluna da esquerda*/
+.coluna-esquerda {   
+  float: left;
+  width: 70%;
+  padding-left: 8px;
+  background-color: #1E1E1E;
+
+}
+
+/*cards com imagens para bio*/
+.galeria-imagens{
+  float: left;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /*espaçamentos equivalentes entre si*/
+  flex-wrap: wrap; /*faz a quebra de linha*/
+}
+
+
+/*possivelmente deletar
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}*/
+
+/*possivelmente deletar
+.menu a {
+  background-color: #7da0ca;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: #021024;
+}*/
+
+
+/*texto central*/
+.texto-central {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    color: #D6CFCB;
+  
+   
+}
+
+
+/*coluna da direita*/
+.coluna-direita {
+  float: left;
+  width: 25%;
+  color: #412005;
+  background-color: #1E1E1E;
+  padding-right: 20px;
+}
+
+/*curiosidades -*/
+.right {
+    background-color: #7da0ca;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    overflow: auto; /*add barra de rolagem se necessário*/
+}
+
+
+
+/*-------------------- SLIDESHOW -------------------------*/
+.mySlides{
+  display: none;
+}
+img{
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+
+}
+
+/*título*/
+.text {
+  color: #D9B48F;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* TALVEZ APAGAR número do índice (1/5 etc) 
+.numbertext {
+  color: #D9B48F;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+/* Bolinhas/pontos */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 1px;
+  background-color: #D6CFCB;  
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #fab48f;
+}
+
+/* Animação o slide */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*-----------FIM DO SLIDE------------------------*/
+
+
+
+/*-------------GALERIA DE IMAGENS - LINKS----------------*/
+div.galeria-card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+
+    transition: all .5s;
+    border: 5px solid transparent;
+  }
+
+  div.galeria-card:hover {
+    /*border: 1px solid #777;*/
+    border: 5px solid #D6CFCB;
+    border-radius: 20px;
+  }
+
+  div.galeria-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+  }
+
+  div.galeria-descricao{
+    padding: 15px;
+    text-align: center;
+    color:#D9B48F;
+   
+ 
+  }
+
+/*-------------------FIM GALERIA DE IMAGENS----------*/
+
+#rodape{
+  background-color: #1E1E1E;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  border-top: 2px #D9B48F solid;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+    /*Tamanho para mobile*/
+    .menu, .texto-central, .right {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+  .coluna-esquerda, .coluna-direita{   
+    width: 100%;
+    padding: 0;
+  }
+}
