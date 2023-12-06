@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600&display=swap');
+
+.principal{
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+	margin-top: 50px; 
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+
+    font-family: Saira Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imagem-descricao{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.informacoes{
+	color: #D9B48F;
+}
+
+.imagem{
+	width: 280px;
+}
+
+.biografia{
+	color: #D6CFCB;
+}
